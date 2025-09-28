@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Release Notes Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Release Notes</h1>
+        <p>Track all changes and updates across different versions</p>
+      </div>
+
+      <div class="content">
+        <div id="loading" class="loading">Loading release notes...</div>
+
+        <div id="error" class="error" style="display: none">
+          <h3>Error loading release notes</h3>
+          <p>Please check the following:</p>
+          <ul style="text-align: left; margin: 10px 0">
+            <li>
+              Make sure <code>release-notes.json</code> exists in the same
+              folder as <code>index.html</code>
+            </li>
+            <li>
+              Try opening the HTML file through a local server instead of
+              double-clicking
+            </li>
+            <li>Check the browser console (F12) for detailed error messages</li>
+          </ul>
+          <p>
+            <strong>Quick fix:</strong> Use a local server like Python's
+            <code>python -m http.server 8000</code> or VS Code Live Server
+            extension.
+          </p>
+        </div>
+
+        <div id="release-notes-container"></div>
+      </div>
+    </div>
+
+    <footer
+      class="copyright"
+    >
+      <p>
+        Developed by <strong>Balrug</strong> - <strong>Amin Norollah</strong>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
