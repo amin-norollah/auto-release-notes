@@ -2,6 +2,8 @@
 
 A simple yet powerful script that automatically creates release notes from your git commit messages. This tool helps front-end developers and DevOps teams generate proper release notes without manual effort, making it perfect for integration with Husky post-commit hooks.
 
+**Live Demo:** [https://amin-norollah.github.io/auto-release-notes/](https://amin-norollah.github.io/auto-release-notes/)
+
 ## What This Script Does
 
 The `update-release-notes.js` script automatically:
