@@ -95,7 +95,7 @@ body {
 }
 
 .version-header.active {
-  background: #66aaea;
+  background: linear-gradient(135deg, #2cb6ec 0%, #2479e9 100%);
   color: white;
 }
 
@@ -153,7 +153,7 @@ body {
   padding: 20px;
   background: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #2cb6ec;
 }
 
 .developer-header {
@@ -170,7 +170,7 @@ body {
 }
 
 .commit-count {
-  background: #667eea;
+  background: #2cb6ec;
   color: white;
   padding: 4px 8px;
   border-radius: 12px;
