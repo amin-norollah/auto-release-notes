@@ -322,11 +322,13 @@ function main() {
     console.log("⚠️ No changes were made to release notes.");
   }
 
-  console.log("\n➕ Creating commit...");
+  console.log("\n➕ Adding amended commit to the commit history...");
   try {
     execSync("git add .", { stdio: "inherit" });
-    execSync('git commit -m "release note"', { stdio: "inherit" });
-    console.log("✅ Commit created successfully");
+    execSync("git commit --amend --no-edit --no-verify", { stdio: "inherit" });
+    console.log(
+      "✅ Successfully amended commit with updated release notes and version"
+    );
   } catch (error) {
     console.error("❌ Error creating commit:", error.message);
   }
